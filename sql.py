@@ -14,3 +14,4 @@ tables = pd.read_sql("""
                      WHERE type='table';""", conn)
 
 print(tables)
+
