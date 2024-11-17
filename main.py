@@ -6,7 +6,7 @@ conn = sqlite3.connect(database)
 
 print("Connection successful")
 
-import pandas as pd
+import pandas as pd 
 
 table = pd.read_sql("""
     SELECT * FROM sqlite_master
@@ -32,4 +32,4 @@ matches = pd.read_sql("""
     SELECT SUM(Extra_Runs) FROM Extra_Runs
 """, conn)
 
-print(matches)
+print(matches) 
